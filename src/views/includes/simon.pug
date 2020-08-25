@@ -1,0 +1,24 @@
+.intro
+  h1.title sımon
+  p.description Juega a Simon online. Repite las secuencias de botones y acumula puntos por cada pulsación. Pon a prueba tu memoria.
+.simon__container
+  button.btn-start EMPEZAR PARTIDA
+  .message-start
+  .simon
+    .simon__tiles
+      .simon__tile.tile__red
+        audio(src="assets/sound/do.wav" preload="auto")
+      .simon__tile.tile__blue
+        audio(src="assets/sound/re.wav" preload="auto")
+      .simon__tile.tile__green
+        audio(src="assets/sound/mi.wav" preload="auto")
+      .simon__tile.tile__yellow
+        audio(src="assets/sound/fa.wav" preload="auto")
+    .simon__inner-circle sımon
+  .main-message
+  .score
+  .record
+.footer
+  a(href="http://dgbdevelopment.com")
+    img(src="assets/img/Logo2-Negro-con-borde.svg", alt="Logo DGB Development")
+    span DGB Development
