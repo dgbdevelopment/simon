@@ -1,5 +1,5 @@
 .intro {
-  width: 360px;
+  width: 320px;
   margin-bottom: 2rem;
   color: $special-color;
   & .title {
@@ -13,7 +13,7 @@
   }
 }
 .simon__container {
-  width: 360px;
+  width: 320px;
   height: 560px;
   position: relative;
   display: flex;
@@ -27,8 +27,8 @@
 }
 .simon {
   position: relative;
-  width: 320px;
-  height: 320px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -37,8 +37,8 @@
   @include neu-border(4px);
   transform: translatey(-10px);
   &__tiles {
-    width: 300px;
-    height: 300px;
+    width: 280px;
+    height: 280px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -136,15 +136,18 @@
 .message-start {
   position: relative;
 }
-.message-start.animated::after {
+.message-start::after {
   content: "";
   position: absolute;
   width: 300px;
+  min-height: 27px;
   top: 0;
   left: 0;
   font-family: $special-font;
   font-size: 1.5rem;
   transform: translate(-18px, -50px);
+}
+.message-start.animated::after {
   animation: message 3s steps(3);
 }
 .main-message {
