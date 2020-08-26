@@ -44,6 +44,7 @@
     grid-template-rows: repeat(2, 1fr);
     border-radius: 50%;
     gap: 10px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
 }
 .tile__red {
